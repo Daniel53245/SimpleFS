@@ -1,0 +1,16 @@
+{
+        "files.associations": {
+                "blkdev.h": "c",
+                "buffer_head.h": "c",
+                "kernel.h": "c",
+                "typeinfo": "c",
+                "types.h": "c",
+                "version.h": "c",
+                "time.h": "c",
+                "uidgid.h": "c",
+                "highuid.h": "c",
+                "stdint.h": "c",
+                "stdio.h": "c",
+                "vvsfs.h": "c"
+        }
+}

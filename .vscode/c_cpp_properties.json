@@ -1,0 +1,61 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-arm64",
+            "defines": [
+                "__KERNEL__"
+            ]
+        },
+        {
+            "name": "LKM-5.15.0-86-generic",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/lib/modules/5.15.0-86-generic/build/include",
+                "/usr/src/linux-headers-5.15.0-86/include/asm-generic"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-arm64",
+            "defines": [
+                "__KERNEL__"
+            ]
+        },
+        {
+            "name": "Xiaoying-5.15.0-87-generic",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/src/linux-headers-5.15.0-87-generic/include",
+                "/usr/src/linux-headers-5.15.0-87-generic/arch/x86/include",
+                "/usr/src/linux-headers-5.15.0-87-generic/arch/x86/include/generated"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-clang-x64",
+            "defines": [
+                "__KERNEL__"
+            ]
+        },
+        {
+            "name": "5.15.0-051500-generic",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/src/linux-headers-5.15.0-051500/include"
+            ],
+            "defines": ["__KERNEL__"],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

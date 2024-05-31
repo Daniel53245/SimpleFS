@@ -1,0 +1,22 @@
+---
+Language:        Cpp
+# Use spaces for indentation.
+IndentWidth:     4
+TabWidth:        4
+UseTab:          Never
+BreakBeforeBraces: Attach # Brackets remain attached to the statement.
+SortIncludes: false
+MaxEmptyLinesToKeep: 3
+ColumnLimit: 120
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+AlignOperands: true
+AllowShortBlocksOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: true
+BinPackArguments: true
+BinPackParameters: true
+BreakBeforeTernaryOperators: true
+KeepEmptyLinesAtTheStartOfBlocks: true
+PointerAlignment: Left
+SpaceAfterTemplateKeyword: false
+SpaceBeforeParens: Never

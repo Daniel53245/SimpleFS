@@ -1,0 +1,57 @@
+# Vscode Configuration
+C/C++: Select a Configuration...
+C/C++: Edit Configurations (JSON)
+
+# Print kernal log
+sudo dmesg --follow &
+sudo dmesg
+sudo dmesg --clear
+
+# Add execution permission
+chmod +x myscript.sh
+
+# Change ownership
+sudo chown osilab:osilab myfs
+
+# View all registered file system
+cat /proc/filesystems
+
+# View all mounts
+cat /proc/mounts
+
+================ Run Guide ================
+
+# 1 Create a image file
+dd if=/dev/zero of=mydisk.img bs=1024 count=20484
+
+# 2 Make a directory to mount
+mkdir testdir
+
+# 3 Compile the fs module
+make
+
+# 4 Load the fs module
+sudo insmod vvsfs.ko # register
+
+# 5 Format the image file using vvsfs
+./mkfs.vvsfs mydisk.img # format
+
+# 6 Mount the image file
+sudo mount -t vvsfs -o loop mydisk.img testdir # mount
+
+================ Clean Up Guide ================
+
+# 1 Unmount the image file
+sudo umount testdir
+
+# 2 Deregister the vvsfs module
+sudo rmmod vvsfs
+
+# 3 Clean binary objects
+make clean
+
+# 4 Remove image file
+rm mydisk.img
+
+# 5 Remove testidr
+rmdir testdir
